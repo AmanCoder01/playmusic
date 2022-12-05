@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Your Song</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    " class="css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="https://kit.fontawesome.com/127a50a4c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar1 bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"><i class="fa-solid fa-music"></i> Amusic</a>
+            <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#contact">Contact</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light " href="#video">Video Player</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="searchbar" onsubmit="search_animal()">
+                    <input class="form-control me-2" type="search" placeholder="Search Song type" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="main-div">
+
+        <h1 class="text-light mt-2 p-2"><i class="fa-solid fa-music"></i>  Music Player</h1>
+        <div class="music-container">
+            <h2 id="title">Kesariya Tera </h2>
+            <h3 id="artist">Arijit Singh</h3>
+            <div class="img-container">
+                <img src="image/aman-1.jpg" alt="">
+            </div>
+            <audio src="music/aman-1.mp3"></audio>
+
+<!-- -------------------progress bar------------------ -->
+
+         <div class="progressbar-container" id="progress-container">
+            <div class="progress-duration-meter">
+                <div id="current-time">0:00</div>
+                <div id="duration">2:44</div>
+
+            </div>
+            <div class="progress-div">
+                <div id="progress" class="progress"></div>
+            </div>
+         </div>
+
+
+
+            <div class="progressbar-container" id="progress-container">
+
+            </div>
+
+            <!-- controls -->
+            <div class="music-controls">
+                <i class=" fas fa-solid fa-backward" id="prev" title="Privious"></i>
+                <i class=" fas fa-solid fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-solid fa-forward" id="next" title="Next"></i>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class=" video1" id="video">
+
+
+        <h1 class=" text-center text-light mt-4 p-2"><i class="fa-solid fa-video"></i>  Video Player</h1>
+
+        <div class="youtube text-center">
+            <i class="fa-brands fa-youtube"></i>
+            <input type="text" class="inputyt " placeholder="Search" value="" required>
+            <a class="ytbtn"> <i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div id="card">
+            <div class="card-items">
+                <div class="card1">
+                    <iframe height="315"
+                        src="https://www.youtube.com/embed/videoseries?list=PL76sOp-Nj4YQ1sdQXfR05A9ig4Kcddo5e"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </iframe>
+
+                </div>
+                <div class="card2">
+                    <iframe height="315" src="https://www.youtube.com/embed/HmY1Ed6mXcU?start=10"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card3">
+                    <div class="card1">
+                        <iframe height="315" src="https://www.youtube.com/embed/HmY1Ed6mXcU?start=10"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card-items">
+                <div class="card1">
+                    <iframe  height="315" src="https://www.youtube.com/embed/ehooGxi8ysU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+                <div class="card2">
+                    <iframe  height="315" src="https://www.youtube.com/embed/Av5WiPQ8Xjg?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card3">
+                    <div class="card1">
+                        <iframe  height="315" src="https://www.youtube.com/embed/iAu-7LkO1h8?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title text-light">Contact Me</h1>
+                    <p class="text-light"><i class="fa-solid fa-paper-plane text-light"></i>amanm1841@gmail.com
+                    </p>
+                    <p class="text-light"><i class="fa-solid fa-phone text-light"></i>9026849004
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100026568856619" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/AmanOP68837659?t=du-yQxP0BQBe9AOUPSv0jA&s=09" target="_blank"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/mr_aman_091?igshid=NTdlMDg3MTY=" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-maurya-611999229" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" class="form2">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" cols="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 text-light fs-5">Submit</button>
+                    </form>
+                    <span id="msg">
+
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="text-light">Copyright Amusic. Made with <i class="fa-solid fa-heart"></i>
+                by Aman Maurya</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+        let query = document.querySelector('.inputyt');
+        let search = document.querySelector('.ytbtn');
+
+        search.onclick = function () {
+            let url = 'https://www.youtube.com/search?q=' + query.value;
+            window.open(url, '_self');
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        const music = document.querySelector('audio');
+        const img = document.querySelector('img');
+        const play = document.getElementById("play");
+        const artist = document.getElementById("artist");
+        const title = document.getElementById("title");
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        
+        let progress=document.getElementById("progress");
+        const total_duration=document.getElementById("duration");  
+         let current_time =document.getElementById("current-time");
+        const songs = [
+            {
+                name: "aman-1",
+                title: "Kesariya Tera",
+                artist: "Arijit Singh",
+            },
+
+            {
+                name: "aman-2",
+                title: "Jo Tainu Dhoop",
+                artist: "Rito Riba",
+            },
+
+            {
+                name: "aman-3",
+                title: "Manike Mage",
+                artist: "Yohani",
+            },
+            {
+                name: "aman-4",
+                title: "Jug Jug Jeeve",
+                artist: "Sachet Tandon",
+            },
+            {
+                name: "aman-5",
+                title: "Shiddat Title",
+                artist: "Manan Bhardwaj",
+            },
+
+        ];
+
+        let isPlaying = false;
+
+        const playMusic = () => {
+            isPlaying = true;
+            music.play();
+            play.classList.replace('fa-play', "fa-pause");
+            img.classList.add("anime");
+        };
+
+        const pauseMusic = () => {
+            isPlaying = false;
+            music.pause();
+            play.classList.replace("fa-pause", "fa-play");
+            img.classList.remove("anime");
+        };
+
+        play.addEventListener('click', () => {
+            if (isPlaying) {
+                pauseMusic();
+            }
+            else {
+                playMusic();
+            }
+        });
+
+        // changing music data
+
+        const loadSong = (songs) => {
+            title.textContent = songs.title;
+            artist.textContent = songs.artist;
+            music.src = "music/" + songs.name + ".mp3";
+            img.src = "image/" + songs.name + ".jpg";
+        };
+
+
+
+
+        songIndex = 0;
+
+        const nextSong = () => {
+            songIndex = (songIndex + 1) % songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+        };
+
+        const prevSong = () => {
+            songIndex = (songIndex - 1 + songs.length) % songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+        };
+
+// progreess bar
+
+music.addEventListener('timeupdate', (event) => {
+  
+    const {currentTime,duration}=event.srcElement;
+       
+    let progress_time= (currentTime / duration)* 100;
+    progress.style.width='${progress_time}%';
+
+    // let min_duration = Math.floor(duration/60);
+    // let sec_duration = Math.floor(duration%60);
+
+    // let tot_duration='${min_duration}:${sec_duration}';
+    // total_duration.textContent='${tot_duration}';
+});
+
+        next.addEventListener("click", nextSong);
+        prev.addEventListener("click", prevSong);
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
